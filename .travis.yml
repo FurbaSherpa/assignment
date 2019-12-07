@@ -1,22 +1,24 @@
 language: node_js
+
 node_js:
   - 10.9.0
 
 cache: npm
 
+before_install:
+  - "npm config set spin false"
+  - npm i -g now
+  
 env:
+  global:
   - NOW_TOKEN=vwykkW0UcjsdmCbVX9qb0pow
-
+  
 install:
   - npm install
 
 script:
   - npm run build
   - npm run test
-
-before_install:
-  - "npm config set spin false"
-  - npm i -g now
 
 deploy:
   provider: script
