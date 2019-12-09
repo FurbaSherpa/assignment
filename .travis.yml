@@ -10,7 +10,7 @@ before_install:
   - npm i -g now
   
 env:
-  - NOW_TOKEN=vwykkW0UcjsdmCbVX9qb0pow
+  - NOW_TOKEN=j52KD89vV9yx7kyKWaSsmgVS
   
 install:
   - npm install
