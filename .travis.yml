@@ -16,7 +16,7 @@ install:
   - npm install
 
 script:
-  - npm run build
+  - npm run build --output public
   - npm run test
 
 deploy:
